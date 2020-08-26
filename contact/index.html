@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Javohir Shodiyev" />
+    <meta name="keywords" content="Shodiyev, Javohir Shodiyev, Javohir website, Javohir site" />
+    <meta name="description" content="Javohir Shodiyev is a web developer from Uzbekistan." />
+    <title>Contact | Javohir Shodiyev - CV</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" href="../img/favicon.png" />
+    <link rel="apple-touch-icon" href="../img/apple-touch-icon.png" />
+  </head>
+  <body>
+    <input id="menuToggle" type="checkbox" hidden />
+    <header class="page-header">
+      <div class="page-header__inner">
+        <nav class="main-nav">
+          <label class="main-nav__toggle" for="menuToggle">
+            <i class="main-nav__icon">Menu</i>
+          </label>
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link" href="/">Home</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="/projects/">Projects</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="/about/">About</a></li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--active">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="contacts" id="contacts">
+        <div class="contacts__inner">
+          <h3>Contact form</h3>
+          <div class="contacts__form">
+            <form
+              class="form"
+              method="POST"
+              enctype="multipart/form-data"
+              action="mailto:shodiyev.98@mail.ru"
+              autocomplete="off"
+            >
+              <div class="contacts__fieldset">
+                <div class="contacts__column">
+                  <label>Name</label>
+                  <input type="text" name="name" required="required" />
+                  <label>Email</label>
+                  <input type="email" name="email" required="required" />
+                  <label>Subject</label>
+                  <input type="text" name="subject" required="required" />
+                </div>
+                <div class="contacts__column">
+                  <label>Message</label>
+                  <textarea name="message" required="required"></textarea>
+                  <p class="contacts__status"></p>
+                  <button type="submit">Send message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__inner">
+        <nav class="page-footer__social">
+          <a
+            href="https://t.me/jrr998"
+            class="page-footer__social-item page-footer__social-item--tg"
+            target="_blank"
+            rel="nofollow"
+            >TG</a
+          >
+          <a
+            href="https://www.facebook.com/javohir.98"
+            class="page-footer__social-item page-footer__social-item--fb"
+            target="_blank"
+            rel="nofollow"
+            >Facebook</a
+          >
+          <a
+            href="https://github.com/vestop"
+            class="page-footer__social-item page-footer__social-item--gh"
+            target="_blank"
+            rel="nofollow"
+            >Github</a
+          >
+          <a
+            href="mailto:shodiyev.98@mail.ru"
+            class="page-footer__social-item page-footer__social-item--email"
+            target="_blank"
+            rel="nofollow"
+            >Email</a
+          >
+        </nav>
+        <div class="page-footer__copyright">
+          <p>© Copyright 2020, Javohir Shodiyev.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/form.js"></script>
+  </body>
+</html>
